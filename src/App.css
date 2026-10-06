@@ -2479,3 +2479,116 @@
   transform: translateY(-3px);
 }
 
+
+
+.github-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: #111;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.github-button:hover {
+  transform: translateY(-2px);
+}
+
+/* ============================= */
+/* GITHUB BUTTON */
+/* ============================= */
+
+.github-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 20px;
+
+  border-radius: 8px;
+  border: 1px solid #333;
+
+  background: #111;
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.github-button:hover {
+  transform: translateY(-2px);
+  background: #222;
+}
+
+
+/* ============================= */
+/* MODAL BUTTONS */
+/* ============================= */
+
+.modal-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  margin-top: 25px;
+}
+
+
+/* ============================= */
+/* CLOSE BUTTON */
+/* ============================= */
+
+.close-button {
+  padding: 10px 20px;
+
+  border-radius: 8px;
+  border: 1px solid #333;
+
+  background: transparent;
+  color: inherit;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.close-button:hover {
+  transform: translateY(-2px);
+}
+
+.footer-signature {
+  margin-top: 15px;
+}
+
+.footer-signature img {
+  width: 150px;
+  height: auto;
+  display: block;
+}
+
+.footer-signature {
+  margin-top: 15px;
+}
+
+.footer-signature img {
+  width: 150px;
+  height: auto;
+  display: block;
+}

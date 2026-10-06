@@ -51,10 +51,7 @@ function App() {
       Experience
     </a>
 
-    <a href="#education" className="nav-item">
-
-  Education
-</a>
+   
 
 <a href="#certifications" className="nav-item">
 
@@ -336,336 +333,457 @@ function App() {
 
   <div className="projects-container">
 
+  {/* Project 1 - Employee Management System */}
+  <div className="project-card">
 
-    {/* Project 1 */}
-    <div className="project-card">
-
-      <div className="project-top">
-        <span className="project-number">01</span>
-        <span className="project-icon">☕</span>
-      </div>
-
-      <h3>Student Management System</h3>
-
-      <p>
-        A web-based student management application built using
-        Java Servlets and JDBC with complete CRUD operations.
-      </p>
-
-      <div className="project-tags">
-        <span>Java</span>
-        <span>Servlets</span>
-        <span>JDBC</span>
-        <span>MySQL</span>
-      </div>
-
-      <button
-        className="view-project"
-        onClick={() =>
-          setSelectedProject({
-            title: "Student Management System",
-            icon: "☕",
-            description:
-              "A web-based Student Management System developed using Java Servlets and JDBC for managing student records efficiently.",
-            features: [
-              "Add student details",
-              "View student records",
-              "Update student information",
-              "Delete student records",
-              "MySQL database connectivity"
-            ],
-            technologies:
-              "Java • Servlets • JDBC • MySQL • HTML • CSS"
-          })
-        }
-      >
-        View Project Details <span>↗</span>
-      </button>
-
+    <div className="project-top">
+      <span className="project-number">01</span>
+      <span className="project-icon">⚛️</span>
     </div>
 
+    <h3>Employee Management System Using React</h3>
 
-    {/* Project 2 */}
-    <div className="project-card">
+    <p>
+      Developed an employee management application using React.js
+      with CRUD operations for managing employee information.
+    </p>
 
-      <div className="project-top">
-        <span className="project-number">02</span>
-        <span className="project-icon">🗄️</span>
-      </div>
-
-      <h3>Student Management System</h3>
-
-      <p>
-        A Hibernate and Maven based application designed to
-        store, retrieve and manage student information.
-      </p>
-
-      <div className="project-tags">
-        <span>Java</span>
-        <span>Hibernate</span>
-        <span>Maven</span>
-        <span>MySQL</span>
-      </div>
-
-      <button
-        className="view-project"
-        onClick={() =>
-          setSelectedProject({
-            title: "Student Management System - Hibernate",
-            icon: "🗄️",
-            description:
-              "A student management application developed using Hibernate ORM and Maven for efficient database operations.",
-            features: [
-              "Hibernate ORM integration",
-              "Student CRUD operations",
-              "Database persistence",
-              "Maven project management",
-              "MySQL connectivity"
-            ],
-            technologies:
-              "Java • Hibernate • Maven • MySQL"
-          })
-        }
-      >
-        View Project Details <span>↗</span>
-      </button>
-
+    <div className="project-tags">
+      <span>React JS</span>
+      <span>JavaScript</span>
+      <span>HTML</span>
+      <span>CSS</span>
     </div>
 
-
-    {/* Project 3 */}
-    <div className="project-card">
-
-      <div className="project-top">
-        <span className="project-number">03</span>
-        <span className="project-icon">🤖</span>
-      </div>
-
-      <h3>AI Classroom Monitoring Robot</h3>
-
-      <p>
-        An AI-based robot designed to monitor classroom activities
-        and help maintain discipline during learning.
-      </p>
-
-      <div className="project-tags">
-        <span>Python</span>
-        <span>AI</span>
-        <span>Computer Vision</span>
-      </div>
-
-      <button
-        className="view-project"
-        onClick={() =>
-          setSelectedProject({
-            title: "AI Classroom Monitoring Robot",
-            icon: "🤖",
-            description:
-              "An AI-based classroom monitoring robot designed to assist teachers by monitoring classroom activities.",
-            features: [
-              "Classroom activity monitoring",
-              "Face recognition",
-              "Computer vision",
-              "Automated monitoring",
-              "HC-05 integration"
-            ],
-            technologies:
-              "Python • AI • Computer Vision • Face Recognition • HC-05"
-          })
-        }
-      >
-        View Project Details <span>↗</span>
-      </button>
-
-    </div>
-
-
-    {/* Project 4 */}
-    <div className="project-card">
-
-      <div className="project-top">
-        <span className="project-number">04</span>
-        <span className="project-icon">⚛️</span>
-      </div>
-
-      <h3>Employee Management System</h3>
-
-      <p>
-        A React-based employee management application for
-        managing employee information with CRUD operations.
-      </p>
-
-      <div className="project-tags">
-        <span>React JS</span>
-        <span>JavaScript</span>
-        <span>HTML</span>
-        <span>CSS</span>
-      </div>
-
-      <button
-        className="view-project"
-        onClick={() =>
-          setSelectedProject({
-            title: "Employee Management System",
-            icon: "⚛️",
-            description:
-              "A responsive Employee Management System developed using React JS to manage employee information.",
-            features: [
-              "Create employee",
-              "View all employees",
-              "View individual employee",
-              "Update employee details",
-              "Delete employee"
-            ],
-            technologies:
-              "React JS • JavaScript • HTML • CSS • CRUD"
-          })
-        }
-      >
-        View Project Details <span>↗</span>
-      </button>
-
-    </div>
-
-
-    {/* Project 5 */}
-    <div className="project-card">
-
-      <div className="project-top">
-        <span className="project-number">05</span>
-        <span className="project-icon">🚗</span>
-      </div>
-
-      <h3>Vehicular Black Box</h3>
-
-      <p>
-        A vehicle monitoring system designed to record important
-        parameters for accident analysis and emergency response.
-      </p>
-
-      <div className="project-tags">
-        <span>Arduino</span>
-        <span>MySQL</span>
-        <span>HTML</span>
-        <span>PHP</span>
-      </div>
-
-      <button
-        className="view-project"
-        onClick={() =>
-          setSelectedProject({
-            title: "Vehicular Black Box",
-            icon: "🚗",
-            description:
-              "A system designed to monitor and record critical vehicle parameters for accident analysis and emergency response.",
-            features: [
-              "Vehicle parameter monitoring",
-              "Speed monitoring",
-              "Diesel level monitoring",
-              "Driver condition monitoring",
-              "Accident data recording"
-            ],
-            technologies:
-              "Arduino IDE • MySQL • HTML • PHP"
-          })
-        }
-      >
-        View Project Details <span>↗</span>
-      </button>
-
-    </div>
+    <button
+      className="view-project"
+      onClick={() =>
+        setSelectedProject({
+          title: "Employee Management System",
+          icon: "⚛️",
+          description:
+            "A responsive Employee Management System developed using React JS to manage employee information with complete CRUD operations.",
+          features: [
+            "Create employee",
+            "View all employees",
+            "View individual employee",
+            "Update employee details",
+            "Delete employee records"
+          ],
+          technologies:
+            "React JS • JavaScript • HTML • CSS • CRUD",
+          github:
+            "https://github.com/sangameshwari017/employee-react-project"
+        })
+      }
+    >
+      View Project Details <span>↗</span>
+    </button>
 
   </div>
 
 
-  {/* Project Popup */}
+  {/* Project 2 - Employee JDBC */}
+  <div className="project-card">
 
-  {selectedProject && (
+    <div className="project-top">
+      <span className="project-number">02</span>
+      <span className="project-icon">☕</span>
+    </div>
+
+    <h3>Employee Management System Using JDBC</h3>
+
+    <p>
+      Developed a Employee management system using JDBC and MySQL
+      for database operations and student record management.
+    </p>
+
+    <div className="project-tags">
+      <span>Java</span>
+      <span>JDBC</span>
+      <span>MySQL</span>
+    </div>
+
+    <button
+      className="view-project"
+      onClick={() =>
+        setSelectedProject({
+          title: "Employee Management System - JDBC",
+          icon: "☕",
+          description:
+            "A Employee management system developed using Java JDBC and MySQL for performing database operations and managing Employee records.",
+          features: [
+            "Add Employee details",
+            "View Employee records",
+            "Update Employee information",
+            "Delete Employee records",
+            "MySQL database connectivity"
+          ],
+          technologies:
+            "Java • JDBC • MySQL",
+          github:
+            "https://github.com/sangameshwari017/student-jdbc-project"
+        })
+      }
+    >
+      View Project Details <span>↗</span>
+    </button>
+
+  </div>
+
+
+  {/* Project 3 - Student Hibernate */}
+  <div className="project-card">
+
+    <div className="project-top">
+      <span className="project-number">03</span>
+      <span className="project-icon">🗄️</span>
+    </div>
+
+    <h3>Student Management Using Hibernate</h3>
+
+    <p>
+      Developed a database-driven Student management application
+      using Hibernate and MySQL.
+    </p>
+
+    <div className="project-tags">
+      <span>Java</span>
+      <span>Hibernate</span>
+      <span>Maven</span>
+      <span>MySQL</span>
+    </div>
+
+    <button
+      className="view-project"
+      onClick={() =>
+        setSelectedProject({
+          title: "Student Management System - Hibernate",
+          icon: "🗄️",
+          description:
+            "A database-driven Student Management System developed using Hibernate ORM and MySQL for efficient database operations.",
+          features: [
+            "Hibernate ORM integration",
+            "Add Student records",
+            "View Student records",
+            "Update Student information",
+            "Delete Student records",
+            "Database persistence"
+          ],
+          technologies:
+            "Java • Hibernate • Maven • MySQL",
+          github:
+            "https://github.com/sangameshwari017/student-maven-project"
+        })
+      }
+    >
+      View Project Details <span>↗</span>
+    </button>
+
+  </div>
+
+
+  {/* Project 4 - Student Servlet */}
+  <div className="project-card">
+
+    <div className="project-top">
+      <span className="project-number">04</span>
+      <span className="project-icon">🌐</span>
+    </div>
+
+    <h3>Student Management System Using Servlets</h3>
+
+    <p>
+      Developed a web-based student management system with CRUD
+      operations using Java Servlets.
+    </p>
+
+    <div className="project-tags">
+      <span>Java</span>
+      <span>Servlets</span>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>MySQL</span>
+    </div>
+
+    <button
+      className="view-project"
+      onClick={() =>
+        setSelectedProject({
+          title: "Student Management System - Servlets",
+          icon: "🌐",
+          description:
+            "A web-based Student Management System developed using Java Servlets, HTML, CSS and MySQL to manage student records.",
+          features: [
+            "Add student details",
+            "View student records",
+            "Update student information",
+            "Delete student records",
+            "Login functionality",
+            "MySQL database connectivity"
+          ],
+          technologies:
+            "Java • Servlets • HTML • CSS • MySQL",
+          github:
+            "https://github.com/sangameshwari017/Student-Management-System"
+        })
+      }
+    >
+      View Project Details <span>↗</span>
+    </button>
+
+  </div>
+
+
+  {/* Project 5 - Personal Portfolio */}
+  <div className="project-card">
+
+    <div className="project-top">
+      <span className="project-number">05</span>
+      <span className="project-icon">💼</span>
+    </div>
+
+    <h3>Personal Portfolio Website</h3>
+
+    <p>
+      Developed a responsive personal portfolio website to showcase
+      skills, projects and professional information.
+    </p>
+
+    <div className="project-tags">
+      <span>React JS</span>
+      <span>JavaScript</span>
+      <span>HTML</span>
+      <span>CSS</span>
+    </div>
+
+    <button
+      className="view-project"
+      onClick={() =>
+        setSelectedProject({
+          title: "Personal Portfolio Website",
+          icon: "💼",
+          description:
+            "A responsive personal portfolio website developed using React JS to showcase skills, projects, education and professional information.",
+          features: [
+            "Responsive portfolio design",
+            "About me section",
+            "Skills section",
+            "Projects section",
+            "Contact section",
+            "GitHub project links"
+          ],
+          technologies:
+            "React JS • JavaScript • HTML • CSS",
+          github:
+            "https://github.com/sangameshwari017/portfolio"
+        })
+      }
+    >
+      View Project Details <span>↗</span>
+    </button>
+
+  </div>
+
+
+{/* Project 6 - AI Classroom Monitoring Robot */}
+<div className="project-card">
+
+  <div className="project-top">
+    <span className="project-number">06</span>
+    <span className="project-icon">🤖</span>
+  </div>
+
+  <h3>AI-Based Classroom Monitoring Robot</h3>
+
+  <p>
+    Built an AI-based robot to monitor classroom activities
+    and help teachers maintain discipline for effective learning.
+  </p>
+
+  <div className="project-tags">
+    <span>Python</span>
+    <span>AI</span>
+    <span>Computer Vision</span>
+    <span>HC-05</span>
+  </div>
+
+  <button
+    className="view-project"
+    onClick={() =>
+      setSelectedProject({
+        title: "AI-Based Classroom Monitoring Robot",
+        icon: "🤖",
+        description:
+          "An AI-based robot developed to assist teachers by monitoring classroom activities and maintaining discipline during learning.",
+        features: [
+          "Classroom activity monitoring",
+          "Face recognition",
+          "Computer vision",
+          "Automated monitoring",
+          "HC-05 Bluetooth communication"
+        ],
+        technologies:
+          "Python • Microcontroller • HC-05 Bluetooth • AI • Computer Vision • Face Recognition",
+          github : null
+      })
+    }
+  >
+    View Project Details <span>↗</span>
+  </button>
+
+</div>
+
+
+{/* Project 7 - Vehicular Black Box */}
+<div className="project-card">
+
+  <div className="project-top">
+    <span className="project-number">07</span>
+    <span className="project-icon">🚗</span>
+  </div>
+
+  <h3>Vehicular Black Box</h3>
+
+  <p>
+    Designed a vehicle monitoring system to record critical
+    parameters during accidents for emergency response and investigation.
+  </p>
+
+  <div className="project-tags">
+    <span>Arduino</span>
+    <span>MySQL</span>
+    <span>HTML</span>
+    <span>PHP</span>
+  </div>
+
+  <button
+    className="view-project"
+    onClick={() =>
+      setSelectedProject({
+        title: "Vehicular Black Box with Automatic Emergency Assistance",
+        icon: "🚗",
+        description:
+          "A vehicle monitoring system designed to record critical vehicle parameters during accidents to support emergency response and case investigation.",
+        features: [
+          "Vehicle parameter monitoring",
+          "Speed monitoring",
+          "Diesel level monitoring",
+          "Driver condition monitoring",
+          "Accident data recording",
+          "Emergency assistance"
+        ],
+        technologies:
+          "Arduino IDE • MySQL • HTML • PHP",
+           github: null
+          
+      })
+    }
+  >
+    View Project Details <span>↗</span>
+  </button>
+
+</div>
+</div>
+
+{/* Project Popup */}
+
+{selectedProject && (
+
+  <div
+    className="project-overlay"
+    onClick={() => setSelectedProject(null)}
+  >
 
     <div
-      className="project-overlay"
-      onClick={() => setSelectedProject(null)}
+      className="project-modal"
+      onClick={(e) => e.stopPropagation()}
     >
 
-      <div
-        className="project-modal"
-        onClick={(e) => e.stopPropagation()}
+      <button
+        className="close-modal"
+        onClick={() => setSelectedProject(null)}
       >
-
-        <button
-          className="close-modal"
-          onClick={() => setSelectedProject(null)}
-        >
-          ×
-        </button>
+        ×
+      </button>
 
 
-        <div className="modal-icon">
-          {selectedProject.icon}
-        </div>
+      <div className="modal-icon">
+        {selectedProject.icon}
+      </div>
 
 
-        <p className="modal-label">
-          PROJECT DETAILS
-        </p>
+      <p className="modal-label">
+        PROJECT DETAILS
+      </p>
 
 
-        <h2>
-          {selectedProject.title}
-        </h2>
+      <h2>
+        {selectedProject.title}
+      </h2>
 
 
-        <p className="modal-description">
-          {selectedProject.description}
-        </p>
+      <p className="modal-description">
+        {selectedProject.description}
+      </p>
 
 
-        <h4>Key Features</h4>
+      <h4>Key Features</h4>
 
-        <div className="feature-list">
+      <div className="feature-list">
 
-          {selectedProject.features.map(
-            (feature, index) => (
+        {selectedProject.features.map(
+          (feature, index) => (
 
-              <div
-                className="feature-item"
-                key={index}
-              >
-                <span>✓</span>
-                {feature}
-              </div>
+            <div
+              className="feature-item"
+              key={index}
+            >
+              <span>✓</span>
+              {feature}
+            </div>
 
-            )
-          )}
-
-        </div>
-
-
-        <h4>Technologies</h4>
-
-        <div className="modal-tech">
-          {selectedProject.technologies}
-        </div>
-
-
-        <div className="modal-buttons">
-
-      
-
-          <button
-            className="close-button"
-            onClick={() => setSelectedProject(null)}
-          >
-            Close
-          </button>
-
-        </div>
+          )
+        )}
 
       </div>
 
+
+      <h4>Technologies</h4>
+
+      <div className="modal-tech">
+        {selectedProject.technologies}
+      </div>
+
+
+      {/* GitHub + Close Buttons */}
+
+      <div className="modal-buttons">
+
+  {selectedProject.github && (
+    <a
+      href={selectedProject.github}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="github-button"
+    >
+      GitHub ↗
+    </a>
+  )}
+
+  <button
+    className="close-button"
+    onClick={() => setSelectedProject(null)}
+  >
+    Close
+  </button>
+
+</div>
     </div>
 
-  )}
+  </div>
+
+)}
 
 </section>
 
@@ -674,7 +792,7 @@ function App() {
 <section className="experience" id="experience">
 
   <div className="section-title">
-    <p>MY JOURNEY</p>
+    <p>MY JOURNEY.!!</p>
     <h2>Experience & <span>Internship</span></h2>
     <div className="title-line"></div>
   </div>
@@ -694,7 +812,7 @@ function App() {
 
           <div>
             <span className="experience-date">
-              September 2026 – Present
+              January 2026
             </span>
 
             <h3>Java Full Stack Development Intern</h3>
@@ -710,7 +828,7 @@ function App() {
 
 
         <p>
-          Currently gaining hands-on experience in Java Full Stack
+          Gained hands-on experience in Java Full Stack
           Development and working with multiple technologies used
           for building web applications.
         </p>
@@ -719,14 +837,17 @@ function App() {
         <div className="experience-skills">
 
           <span>Java</span>
-          <span>Spring</span>
+           <span>JDBC</span>
+            <span>Servlets</span>
           <span>Hibernate</span>
+          <span>SpringBoot</span>
           <span>REST API</span>
           <span>SQL</span>
-          <span>React.js</span>
+         
           <span>HTML</span>
           <span>CSS</span>
           <span>JavaScript</span>
+           <span>React.js</span>
 
         </div>
 
@@ -786,101 +907,13 @@ function App() {
 </section>
 
 
-{/* Education Section */}
-<section className="education" id="education">
-
-  <div className="section-title">
-    <p>MY ACADEMIC JOURNEY</p>
-    <h2>Education <span>Background</span></h2>
-    <div className="title-line"></div>
-  </div>
-
-
-  <div className="education-container">
-
-    {/* Degree */}
-    <div className="education-box">
-
-      <div className="education-icon">
-        🎓
-      </div>
-
-      <div className="education-content">
-
-        <span className="education-year">
-          2023 — 2026
-        </span>
-
-        <h3>
-          B.E. Computer Science and Engineering
-        </h3>
-
-        <h4>
-          AVS College of Technology
-        </h4>
-
-        <p>
-          Bachelor of Engineering in Computer Science and
-          Engineering with a strong focus on software development
-          and programming.
-        </p>
-
-        <div className="education-score">
-          <span>CGPA</span>
-          <strong>8.3 / 10</strong>
-        </div>
-
-      </div>
-
-    </div>
-
-
-    {/* Diploma */}
-    <div className="education-box">
-
-      <div className="education-icon">
-        💻
-      </div>
-
-      <div className="education-content">
-
-        <span className="education-year">
-          2020 — 2023
-        </span>
-
-        <h3>
-          Diploma in Computer Science
-        </h3>
-
-        <h4>
-          Government Polytechnic College for Women
-        </h4>
-
-        <p>
-          Diploma in Computer Science with a strong foundation
-          in computer programming and technical concepts.
-        </p>
-
-        <div className="education-score">
-          <span>Percentage</span>
-          <strong>94%</strong>
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
 
 
 {/* Certifications & Achievements Section */}
 <section className="certifications" id="certifications">
 
   <div className="section-title">
-    <p>MY ACHIEVEMENTS</p>
+    <p>MY ACHIEVEMENTS.!! </p>
 
     <h2>
       Certifications <span>& Achievements</span>
@@ -1154,7 +1187,7 @@ function App() {
         <div className="social-links">
 
           <a
-            href="github.com/sangameshwari017"
+            href="https://github.com/sangameshwari017"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -1182,18 +1215,24 @@ function App() {
 <footer className="footer">
 
   <div className="footer-content">
+<div className="footer-brand">
 
-    <div className="footer-brand">
+  <div className="footer-logo">
+    &lt;/&gt; SANGAMESHWARI S<span>.</span>
+  </div>  
 
-      <div className="footer-logo">
-        &lt;/&gt; SANGAMESHWARI<span>.</span>
-      </div>
+  <p>
+    JAVA FULL STACK DEVELOPER..!!
+  </p>
 
-      <p>
-        Java Full Stack Developer
-      </p>
+  <div className="footer-signature">
+    <img
+      src="/signature.png.jpeg"
+      alt="Sangameshwari signature"
+    />
+  </div>
 
-    </div>
+</div>
 
 
     <div className="footer-links">
@@ -1212,7 +1251,7 @@ function App() {
     <div className="footer-social">
 
       <a
-        href="YOUR_GITHUB_LINK"
+        href="https://github.com/sangameshwari017"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -1220,7 +1259,7 @@ function App() {
       </a>
 
       <a
-        href="YOUR_LINKEDIN_LINK"
+        href="https://www.linkedin.com/in/sangameshwari"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -1237,6 +1276,7 @@ function App() {
     <p>
       © 2026 Sangameshwari S. All rights reserved.
     </p>
+    
 
     <a href="#home">
       Back to top ↑
