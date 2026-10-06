@@ -177,7 +177,7 @@ function App() {
       </p>
 
       <p>
-        I am currently gaining hands-on experience in Java Full Stack
+        Gained hands-on experience in Java Full Stack
         Development with Java, JDBC, Hibernate, Servlet, JSP, Springboot, REST API, SQL,
          HTML, CSS and JavaScript, React.js.
       </p>
